@@ -1,13 +1,8 @@
 import React from "react";
-
-import classes from "./certifications.module.css";
-import CreateCertificate from "./CreateCertificate";
-import CertificatesData from "../../Data/CertificatesData"
-import { useSelector } from "react-redux";
+// import CertificatesData from "../../Data/CertificatesData"
+// import { useSelector } from "react-redux";
 const Certifications = (props) => {
 
-    const nonThemeColor=useSelector(state=>state.nonThemeColor);
-    let certificationsList = CertificatesData.certificationsList;
 
     return (
         <React.Fragment>

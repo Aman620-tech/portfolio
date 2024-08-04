@@ -2,9 +2,6 @@ import React from "react";
 
 import classes from "./ProjectItem.module.css";
 import Card from "../UI/Card";
-
-import StarIcon from '@mui/icons-material/Star';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import { useSelector } from "react-redux";
 
@@ -27,12 +24,12 @@ const ProjectItem = (props) => {
             <h2 style={{ color: uiColor }}>{props.project.projectTitle}</h2>
             <p className={classes.description}>{description}</p>
             <div className={classes.controls}>
-            {props?.project?.webLink != "" &&props?.project?.webLink != null  ? 
+            {props?.project?.webLink !== "" &&props?.project?.webLink !== null  ? 
  
                 <div className={classes.projectLink}>
                     <a target="_blank" rel="noreferrer" href={props.project.webLink} style={{ color: nonThemeColor }}><RemoveRedEyeIcon fontSize="large" /></a>
                 </div> :""}
-                {props?.project?.lastUpdated != "" &&props?.project?.lastUpdated != null  ? 
+                {props?.project?.lastUpdated !== "" &&props?.project?.lastUpdated !== null  ? 
                 <p className={classes.dateUpdated} style={{ color: nonThemeColor }}>Last Updated On : {props.project.lastUpdated}</p>
                 :""}
             </div>

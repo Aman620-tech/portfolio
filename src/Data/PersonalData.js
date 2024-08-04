@@ -1,5 +1,4 @@
 // import resume from '../assets'
-const pdfpath = "../assets/resume.pdf";
 const PersonalData = {
   firstName: "Aman Kumar",
   lastName: "Pandey",
